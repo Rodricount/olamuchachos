@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Header */
+header {
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #d43f00;
+}
+
+/* Highlight current page in nav */
+.nav-links a.active {
+  color: #d43f00;
+  font-weight: bold;
+}
+
+/* Menu page */
+.menu-page {
+  padding: 2rem 0;
+}
+
+/* Submenu (only on Menu page) */
+.submenu {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.menu-categories {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;      /* Wraps on small screens */
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-categories a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.menu-categories a:hover {
+  background: #0077cc;
+  color: #fff;
+}
+
+/* Menu list items */
+.menu-page .menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.menu-page .menu-list li {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.menu-page .menu-list li:hover {
+  transform: scale(1.03);
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.6rem;
+  border: none;
+  background: #d43f00;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #a32f00;
+}
+
+/* Footer */
+footer {
+  background: #f8f8f8;
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}
