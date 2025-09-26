@@ -133,6 +133,41 @@ header nav {
   transform: scale(1.03);
 }
 
+/* new by kc */
+.menu-page .menu-list li {
+  /* This overrides the old padding (optional, but good practice) */
+  padding: 1rem; 
+  /* The magic for side-by-side layout */
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
+}
+
+.menu-page .menu-list li img {
+  /* Sets the image size to prefered (i did 100x100 here :p) pixels */
+  width: 100px; 
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.menu-page .menu-list li .item-details {
+  /* Styles for the text next to the image */
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page .menu-list li .item-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.menu-page .menu-list li .item-price {
+  color: #d43f00;
+  font-size: 0.9rem;
+}
+
 /* Contact form */
 .contact-form {
   display: flex;
