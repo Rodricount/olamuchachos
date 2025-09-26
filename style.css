@@ -46,6 +46,11 @@ header nav {
   font-weight: bold;
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
