@@ -74,6 +74,79 @@ header nav {
   font-weight: bold;
 }
 
+/* ------------------ NEW/MODIFIED STYLES FOR HERO SECTION & BUTTONS ------------------ */
+
+/* Primary Button Styling (Red - View Our Full Menu) */
+.button-primary {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    background: #d43f00; 
+    color: white !important; 
+    text-decoration: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-top: 1.5rem; 
+}
+
+.button-primary:hover {
+    background: #a32f00;
+}
+
+/* Secondary Button Styling (NEW - Dark Green - Contact us/Order) */
+.button-secondary {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    background: #1e8449; /* Dark Green Color */
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-left: 10px; 
+    margin-top: 1.5rem;
+}
+
+.button-secondary:hover {
+    background: #196f3d;
+}
+
+/* HERO SECTION STYLING */
+.hero-image-container {
+    text-align: center;
+    padding-top: 2rem; 
+}
+
+.main-hero-image {
+    max-width: 100%; 
+    height: auto;
+    max-height: 500px; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.welcome-text-overlay {
+    text-align: center;
+    padding: 1rem 0 4rem; 
+}
+
+.welcome-text-overlay h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.welcome-text-overlay p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* ------------------ END NEW/MODIFIED STYLES ------------------ */
+
 /* Menu page */
 .menu-page {
   padding: 2rem 0;
@@ -89,7 +162,7 @@ header nav {
 .menu-categories {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;      /* Wraps on small screens */
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 0;
   margin: 0;
@@ -110,7 +183,7 @@ header nav {
   color: #fff;
 }
 
-/* Menu list items */
+/* Menu list items (Original styles for Menu Page) */
 .menu-page .menu-list {
   list-style: none;
   margin: 0;
@@ -133,18 +206,15 @@ header nav {
   transform: scale(1.03);
 }
 
-/* new by kc */
-.menu-page .menu-list li {
-  /* This overrides the old padding (optional, but good practice) */
+/* new by kc (styles for Featured Items on Home Page) */
+.menu-list li {
   padding: 1rem; 
-  /* The magic for side-by-side layout */
   display: flex;
   align-items: center; 
   gap: 15px; 
 }
 
-.menu-page .menu-list li img {
-  /* Sets the image size to prefered (i changed them to 100x100 pixels helou) */
+.menu-list li img {
   width: 100px; 
   height: 100px;
   object-fit: cover;
@@ -152,21 +222,21 @@ header nav {
   flex-shrink: 0;
 }
 
-.menu-page .menu-list li .item-details {
-  /* Styles for the text next to the image */
+.menu-list li .item-details {
   display: flex;
   flex-direction: column;
 }
 
-.menu-page .menu-list li .item-name {
+.menu-list li .item-name {
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.menu-page .menu-list li .item-price {
+.menu-list li .item-price {
   color: #d43f00;
   font-size: 0.9rem;
 }
+
 
 /* Contact form */
 .contact-form {
