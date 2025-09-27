@@ -144,7 +144,7 @@ header nav {
 }
 
 .menu-page .menu-list li img {
-  /* Sets the image size to prefered (i did 100x100 here :p) pixels */
+  /* Sets the image size to prefered (i changed them to 100x100 pixels helou) */
   width: 100px; 
   height: 100px;
   object-fit: cover;
