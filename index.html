@@ -3,35 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Burger Shop</title>
+  <title>Home - My Burger Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
   <header>
     <nav class="container">
       <h1 class="logo">
-        <a href="index.html"> 🍔 My Burger Shop</a>
+        <a href="index.html"> 🍔🪓 My Burger Shop</a>
       </h1>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="products.html">Menu</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <main class="container center">
-    <h2>Welcome to the Best Burgers in Town!</h2>
-    <p>Fresh ingredients, big flavor.</p>
-    <img src="https://via.placeholder.com/400x250" alt="Big burger">
+  <main class="container">
+    <section class="center" style="padding: 4rem 0;">
+      <div style="margin-bottom: 2rem;">
+        <img src="images/brutal_burgers_logo.png" alt="Brutal Burgers Logo" style="max-width: 300px; height: auto; display: block; margin: 0 auto 10px;">
+        <p style="font-size: 1.2rem; font-weight: bold; color: #d43f00; text-transform: uppercase;">
+          BRUTAL BURGERS TO KILL YOUR HUNGER!!!
+        </p>
+      </div>
+      
+      <h2>WELCOME THE BRUTAL BURGERS!</h2>
+      <p style="font-size: 1.1rem; max-width: 600px; margin: 1rem auto 2rem;">
+        The best spot in town for classic burgers, fresh plates, and delicious desserts.
+        We're dedicated to serving up quality food with a friendly smile!
+      </p>
+      <a href="products.html" class="contact-form button" style="width: 200px; margin: 0 auto; display: block; text-decoration: none; text-align: center;">View Our Full Menu</a>
+    </section>
+
+    <hr style="border: 0; height: 1px; background: #ddd; margin: 2rem 0;">
+
+    <section style="padding-bottom: 2rem;">
+      <h3>Featured Items</h3>
+      <ul class="menu-list">
+        <li>
+          <img src="images/classic_burger.png" alt="Classic Burger" style="width: 100px; height: 100px; object-fit: cover; border-radius: 4px; flex-shrink: 0;"> 
+          <div class="item-details">
+            <span class="item-name">Classic Burger</span>
+            <span class="item-price">$8</span>
+            <p style="font-size: 0.9rem; color: #555; margin-top: 5px;">Our famous patty with fresh lettuce and tomato.</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/desert_pancake.png" alt="Desert Pancake" style="width: 100px; height: 100px; object-fit: cover; border-radius: 4px; flex-shrink: 0;">
+          <div class="item-details">
+            <span class="item-name">Desert Pancake</span>
+            <span class="item-price">$4</span>
+            <p style="font-size: 0.9rem; color: #555; margin-top: 5px;">Sweet, fluffy pancakes with maple syrup and fruit.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
   </main>
 
-  <!-- Footer -->
+
   <footer>
     <div class="container">
-      <p>&copy; 2025 My Burger Shop. All rights reserved.</p>
+      <p>&copy; 2025 My Burger Shop</p>
     </div>
   </footer>
 </body>
