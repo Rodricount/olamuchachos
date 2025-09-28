@@ -314,25 +314,21 @@ footer {
   margin-top: 2rem;
 }
 
-/* ------------------ MOBILE RESPONSIVENESS FIX ------------------ */
+/* ------------------ MOBILE RESPONSIVENESS FIX (Hide Text Logo) ------------------ */
 @media (max-width: 768px) {
-    /* Reduce the height of the logo image */
+    /* HIDE the text part of the logo on mobile screens */
+    .logo-text {
+        display: none;
+    }
+    
+    /* Reduce the size of the logo image on mobile */
     .header-logo {
         height: 45px; 
+        margin-right: 0; /* Remove space next to the now-hidden text */
     }
     
-    /* Reduce the font size of the "BRUTAL BURGERS" text */
-    .logo {
-        font-size: 1.6rem;
-    }
-    
-    /* Allow the navigation items to wrap if necessary */
+    /* Make sure the nav links don't wrap and cause issues, though they should be fine now. */
     header nav {
-        flex-wrap: wrap;
-    }
-    
-    /* Add a little space between the logo line and the nav links if they wrap */
-    .nav-links {
-        margin-top: 5px;
+        flex-wrap: nowrap;
     }
 }
