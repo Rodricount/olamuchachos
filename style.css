@@ -47,7 +47,7 @@ header::after {
     background: #d43f00; 
 }
 
-/* LOGO IMAGE SIZE CONTROL (80px) */
+/* LOGO IMAGE SIZE CONTROL (DESKTOP/LARGE SCREEN - 80px) */
 .header-logo {
     height: 80px; 
     width: auto;
@@ -62,7 +62,7 @@ header nav {
 }
 
 .logo {
-  /* LOGO TEXT SIZE CONTROL (2.5rem) */
+  /* LOGO TEXT SIZE CONTROL (DESKTOP/LARGE SCREEN - 2.5rem) */
   font-size: 2.5rem; 
   font-weight: bold;
 }
@@ -74,7 +74,7 @@ header nav {
 
 /* Style for the word "BRUTAL" */
 .brutal-text {
-    color: #d43f00; /* Brand red color */
+    color: #d43f00; 
 }
 
 .nav-links {
@@ -197,30 +197,30 @@ header nav {
   margin: 0;
 }
 
-/* CHANGED: Menu Category Buttons from Blue to Red/Maroon */
+/* Menu Category Buttons (Red/Maroon) */
 .menu-categories a {
   text-decoration: none;
   color: #333; 
   font-weight: 500;
   padding: 0.4rem 0.8rem;
-  border: 1px solid #d43f00; /* Red Border */
+  border: 1px solid #d43f00; 
   border-radius: 4px;
   transition: all 0.2s;
 }
 
 .menu-categories a:hover {
-  background: #9c3400; /* Darker Maroon Hover Background */
+  background: #9c3400; 
   color: #fff;
 }
 
-/* CHANGED: Active Menu Category Button is now Primary Red */
+/* Active Menu Category Button is Primary Red */
 .menu-categories a.active {
     background: #d43f00; 
     color: #fff !important;
     border-color: #d43f00;
 }
 
-/* Menu list items (Original styles for Menu Page) */
+/* Menu list items */
 .menu-page .menu-list {
   list-style: none;
   margin: 0;
@@ -243,7 +243,7 @@ header nav {
   transform: scale(1.03);
 }
 
-/* (styles for Featured Items on Home Page) */
+/* styles for Featured Items on Home Page */
 .menu-list li {
   padding: 1rem; 
   display: flex;
@@ -312,4 +312,27 @@ footer {
   font-size: 0.9rem;
   color: #555;
   margin-top: 2rem;
+}
+
+/* ------------------ MOBILE RESPONSIVENESS FIX ------------------ */
+@media (max-width: 768px) {
+    /* Reduce the height of the logo image */
+    .header-logo {
+        height: 45px; 
+    }
+    
+    /* Reduce the font size of the "BRUTAL BURGERS" text */
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    /* Allow the navigation items to wrap if necessary */
+    header nav {
+        flex-wrap: wrap;
+    }
+    
+    /* Add a little space between the logo line and the nav links if they wrap */
+    .nav-links {
+        margin-top: 5px;
+    }
 }
