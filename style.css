@@ -332,3 +332,93 @@ footer {
         flex-wrap: nowrap;
     }
 }
+
+/* ------------------ CAROUSEL STYLES (NEW) ------------------ */
+
+/* Container for the carousel itself (the window) */
+.carousel-container {
+    width: 100%; 
+    max-width: 800px; /* Limits the max size of the image area */
+    margin: 0 auto;
+    overflow: hidden; /* Hides images outside the window */
+    position: relative;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Cute little shadow! */
+    cursor: grab; /* Shows the user it's draggable */
+}
+
+/* Track holding all the images side-by-side */
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Smooth slide animation */
+}
+
+/* Stops the transition while the user is dragging! */
+.carousel-track.is-dragging {
+    cursor: grabbing;
+    transition: none; 
+}
+
+/* Each slide must be 100% of the container width */
+.carousel-slide {
+    min-width: 100%;
+    flex-shrink: 0; 
+}
+
+/* Image inside the slide */
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation Buttons (Optional but helpful!) */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.2rem;
+    line-height: 1;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.carousel-button:hover {
+    opacity: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Remove old hero image styles */
+.hero-image-container { 
+    /* This class is replaced by .carousel-hero-section in HTML, 
+       but if you want to keep the old one, remove the image specific styles below */
+}
+
+.main-hero-image {
+    /* REMOVE THIS CLASS FROM YOUR CSS */
+    display: none; /* Safely hides the old image if you keep the old container class */
+}
+
+.carousel-hero-section {
+    text-align: center;
+    padding-top: 2rem; 
+}
+
+.welcome-text-overlay {
+    /* Adjust padding for the new structure */
+    padding: 1rem 0 4rem; 
+}

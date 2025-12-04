@@ -25,20 +25,34 @@
 
   <main class="container">
     
-    <section class="hero-image-container">
-      <img src="images/brutalburgerslogo.png" alt="Brutal Burgers: Kill Your Hunger" class="main-hero-image">
-      
-      <div class="welcome-text-overlay">
-        <h2>WELCOME THE BRUTAL BURGERS!</h2>
-        <p>
-          The best spot in town for classic burgers, fresh plates, and delicious desserts.
-          We're dedicated to serving up quality food with a friendly smile!
-        </p>
-        
-        <a href="products.html" class="button-primary">View Our Full Menu</a>
-        
-        <a href="contact.html" class="button-secondary">Contact us/Order →</a>
-      </div>
+    <section class="carousel-hero-section">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="images/11.png" alt="Featured Item 1: Classic Burger">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/22.png" alt="Featured Item 2: Dessert">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/33.png" alt="Featured Item 3: Fresh Plate">
+                </div>
+            </div>  
+            <button class="carousel-button prev" aria-label="Previous Slide">&lt;</button>
+            <button class="carousel-button next" aria-label="Next Slide">&gt;</button>
+        </div>
+
+        <div class="welcome-text-overlay">
+            <h2>WELCOME THE BRUTAL BURGERS!</h2>
+            <p>
+                The best spot in town for classic burgers, fresh plates, and delicious desserts.
+                We're dedicated to serving up quality food with a friendly smile!
+            </p>
+            
+            <a href="products.html" class="button-primary">View Our Full Menu</a>
+            
+            <a href="contact.html" class="button-secondary">Contact us/Order →</a>
+        </div>
     </section>
 
     <hr style="border: 0; height: 1px; background: #ddd; margin: 2rem 0;">
@@ -73,5 +87,6 @@
       <p>&copy; 2025 My Burger Shop</p>
     </div>
   </footer>
+  <script src="carousel.js"></script>
 </body>
 </html>
