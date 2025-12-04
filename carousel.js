@@ -109,10 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const finalTranslate = getTranslateX();
         const movedBy = finalTranslate - prevTranslate;
         const slideWidth = slides[0].getBoundingClientRect().width; 
-
-        // Determine if the drag was enough to switch slides (0.05 threshold)
-        if (Math.abs(movedBy) > slideWidth * 0.05) { // <--- 💖 Set to 0.05 for light resistance!
-            // Dragged right (movedBy is positive) -> Go to previous slide
+ 
+        if (Math.abs(movedBy) > slideWidth * 0.05) {   
             if (movedBy > 0) {
                 currentSlide = (currentSlide - 1 + slides.length) % slides.length;
             } 
@@ -170,4 +168,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial setup: start on the first slide
     moveToSlide(0, true); 
+
 });
